@@ -1,0 +1,17 @@
+import React from 'react';
+import {
+  AppRegistry,
+  Text,
+} from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import MapContainer from './CustomerComponents/MapContainer'
+import Main from './components/Main'
+import DriverHome from './DriverComponent/DriverHome'
+
+const SimpleApp = StackNavigator({
+  Home: { screen: Main },
+  CustomerHomeScreen: {screen: MapContainer},
+  DriverScreen: {screen: DriverHome}
+});
+
+export default SimpleApp
